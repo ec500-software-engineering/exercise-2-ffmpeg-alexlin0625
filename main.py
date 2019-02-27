@@ -43,7 +43,6 @@ if __name__ == "__main__":
 
     while not q.empty():
         filename = q.get()
-
         t = threading.Thread(target=convert480, args=(filename,))
         t1 = threading.Thread(target=convert720, args=(filename,))
         threads.append(t)
